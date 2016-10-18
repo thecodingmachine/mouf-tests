@@ -20,7 +20,7 @@ Moreover, which is quite important to us, you will also need to e skilled in dis
 *  **Using our awsome ORM (TDBM):** [http://mouf-php.com/packages/mouf/database.tdbm/version/4.1.5.0/README.md](http://mouf-php.com/packages/mouf/database.tdbm/version/4.1.5.0/README.md)
 
 ## Install the test project
-Please fork this repository : [http://git.thecodingmachine.com/tcm-projects/mouf-test.git](http://git.thecodingmachine.com/tcm-projects/mouf-test.git) in fact, you may have done thas already as you are reading this project's README file :).
+Please fork this repository : [http://git.thecodingmachine.com/tcm-projects/mouf-test.git](https://github.com/thecodingmachine/mouf-tests.git) in fact, you may have done thas already as you are reading this project's README file :).
 
 Create a database for your project (we'll assume you named it 'test_mouf'). Then run the following SQL statements against the database :
 ```sql
