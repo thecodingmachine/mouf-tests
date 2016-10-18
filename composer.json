@@ -1,0 +1,14 @@
+{
+  "require": {
+    "mouf/mouf": "~2.0.0",
+    "mouf/mvc.splash": "~8.0",
+    "mouf/database.tdbm": "~4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "MoufTest\\": "src/MoufTest"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
