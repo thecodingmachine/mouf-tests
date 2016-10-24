@@ -18,6 +18,7 @@ Moreover, which is quite important to us, you will also need to e skilled in dis
 * **install mouf:** [http://mouf-php.com/packages/mouf/mouf/doc/installing_mouf.md](http://mouf-php.com/packages/mouf/mouf/doc/installing_mouf.md)
 *  **Using the MVC package (Splash):** [http://mouf-php.com/packages/mouf/mvc.splash/version/8.0-dev/README.md](http://mouf-php.com/packages/mouf/mvc.splash/version/8.0-dev/README.md)
 *  **Using our awsome ORM (TDBM):** [http://mouf-php.com/packages/mouf/database.tdbm/version/4.1.5.0/README.md](http://mouf-php.com/packages/mouf/database.tdbm/version/4.1.5.0/README.md)
+*  **Manage weblibraries in Mouf:** [http://mouf-php.com/packages/mouf/html.utils.weblibrarymanager/README.md](http://mouf-php.com/packages/mouf/html.utils.weblibrarymanager/README.md)
 
 ## Install the test project
 Please fork this repository : [http://git.thecodingmachine.com/tcm-projects/mouf-test.git](https://github.com/thecodingmachine/mouf-tests.git) in fact, you may have done thas already as you are reading this project's README file :).
@@ -66,7 +67,7 @@ In order to complete the installation of Mouf, you will have to enter the config
 * **DB_PASSWORD**: your mysql password
 
 Please follow Mouf's installation steps (have a look at the documentation link aove). Once done, the /vendor/mouf/mouf page should show no errors:
-TODO : MOUF NO ERROR IMAGE
+[Mouf]: https://raw.githubusercontent.com/thecodingmachine/mouf-tests/master/img/mouf-no-error.png
 
 Also, if you take a look to the project's files, you will see, among others, the following files:
 
@@ -82,7 +83,7 @@ Also, if you take a look to the project's files, you will see, among others, the
     * index.twig *the view called to display the Splash welcome screen*
 
 You shoud see the Splash welcome page on your application's ROOT url (ex: http://localhost/mouf-test/) :
-TODO : SPLASH WELCOME IMAGE
+[Splash]: https://raw.githubusercontent.com/thecodingmachine/mouf-tests/master/img/splash-welcome.png
 
 If you have gone so far and everything is ok, it means you are ready to code, congratulations !
 
@@ -92,12 +93,14 @@ Basically, we want ou to implement 2 screens :
 * Car form : add or update a car. Some controls are applied on the form
 
 ### Car list
-TODO : car image
+[list]: https://raw.githubusercontent.com/thecodingmachine/mouf-tests/master/img/list.png
 
 ### Car form
-TODO : car image
+[form]: https://raw.githubusercontent.com/thecodingmachine/mouf-tests/master/img/form.png
 
-If you have any troubles installing the project, or any other question, please feel free to contact us at rh@thecodingmachine.com, for a quick response please contact Kevin - kevin.nguyen.tcm or Xavier - TODO on skype !
+These screens should be coded in a NEW controller called CarController please do not use the existing ```RootController```. Most likelly you will need to code JavaScript. Please create a dedicated JS file in ```src/public/js``` and add it to the template using the *WebLibraryManager* (see documentation link above).
+
+If you have any troubles installing the project, or any other question, please feel free to contact us at rh@thecodingmachine.com, for a quick response please contact Kevin - kevin.nguyen.tcm or Xavier - x.huberty on skype !
 
 At the end, please open a pull request on gitlab to submit your work.
 
