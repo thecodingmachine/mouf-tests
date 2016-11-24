@@ -56,6 +56,10 @@ ALTER TABLE `cars`
 
 ALTER TABLE `cars`
   ADD CONSTRAINT `cars_ibfk_1` FOREIGN KEY (`brand_id`) REFERENCES `brands` (`id`);
+
+INSERT INTO `brands` VALUES('1', 'BMW', 'logo0.png');
+INSERT INTO `brands` VALUES('2', 'Porsche', 'logo1.png');
+INSERT INTO `brands` VALUES('3', 'Audi', 'logo2.png');
 ```
 
 In order to complete the installation of Mouf, you will have to enter the configuration settings (DB_*):
