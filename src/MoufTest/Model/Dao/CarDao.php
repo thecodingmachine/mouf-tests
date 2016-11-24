@@ -14,5 +14,10 @@ use MoufTest\Model\Dao\Generated\CarBaseDao;
  */
 class CarDao extends CarBaseDao
 {
-
+	/**
+	 * To get cars by Name
+	 */
+	public function findByName($filter = '', $params = '') {
+		return $this->find($filter, $params);
+	}
 }
