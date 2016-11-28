@@ -108,9 +108,9 @@ If you have any troubles installing the project, or any other question, please f
 
 At the end, please do not open a pull request.
 
+We make sure to add a .gitignore file into the project so please commit all the files. (specially mouf/MoufComponents.php)
+
 Send us an email with your fork name (most of the time, it's your login) and the branch name.
 Then we can test your code by checkouting the branch. 
 
 Happy Coding !
-
-
