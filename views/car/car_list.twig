@@ -1,0 +1,31 @@
+
+{% if success_msg %}
+  <div class="alert alert-success">{{ success_msg }}</div>
+{% endif %}
+
+{% if cars %}
+  <div class="" id="car_wrapper">
+  	<table class="table table-hover table-bordered display" id="cars_tbl_wrap">
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Brand</th>
+          <th>Maximum Speed</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+    		{% for car in cars %}
+    			<tr>
+  		      <td><a href="car/{{ car.id }}/edit">{{ car.name }}</a></td>
+  		      <td>{{ car.brand.name }}</td>
+  		      <td>{{ car.maxSpeed }} kpm</td>
+  		      <td><a href="javascript:void(0);" rel="{{ car.id }}" class="delete-car">Delete</a></td>
+  	      </tr>
+  	    {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <h4>No record found</h4>
+{% endif %}

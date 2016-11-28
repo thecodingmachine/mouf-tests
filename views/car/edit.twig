@@ -1,0 +1,23 @@
+<h1>Edit Car</h1>
+
+<form action="/car/save" method="post" id="carForm">
+  <input class="form-control" type="hidden" name="id" id="id" value="{{ car.id }}">
+  <div class="form-group">
+    <label for="model">Model</label>
+    <input class="form-control" type="text" name="name" id="name" value="{{ car.name }}" required>
+  </div>
+  <div class="form-group">
+    <label for="model">Max. Speed</label>
+    <input class="form-control" type="text" name="max_speed" id="max_speed" value="{{ car.maxSpeed }}" required>
+  </div>
+  <div class="form-group">
+    <label for="model">Brand</label>
+    <select name="brand" required>
+		{% for brand in brands %}
+		  	<option value="{{ brand.id }}" {{ (brand.id == car.brand.id) ? 'selected="selected"' : '' }}>{{ brand.name }}</option>
+	    {% endfor %}
+		</select>
+  </div>
+  
+  <button type="submit" class="btn btn-default" id="carForm">Save</button>
+</form>
