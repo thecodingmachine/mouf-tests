@@ -106,7 +106,10 @@ These screens should be coded in a NEW controller called CarController please do
 
 If you have any troubles installing the project, or any other question, please feel free to contact us at rh@thecodingmachine.com, for a quick response please contact Kevin - kevin.nguyen.tcm or Xavier - x.huberty on skype !
 
-At the end, please open a pull request on gitlab to submit your work.
+At the end, please do not open a pull request.
+
+Send us an email with your fork name (most of the time, it's your login) and the branch name.
+Then we can test your code by checkouting the branch. 
 
 Happy Coding !
 
