@@ -1,4 +1,46 @@
-.idea/
-vendor/
 config.php
-mouf/no_commit/
+
+# Directories
+vendor/*
+.composer/*
+src/Oscar/Model/Proxies/*
+mouf/no_commit/*
+files/sap_csv/*
+files/import/*
+
+# Mouf configuration
+mouf/Mouf.php
+mouf/MoufUI.php
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Netbeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Phpstorm
+.idea/
+
+# SublimeText
+*.sublime-workspace
+
+# TextMate
+*.tmproj
+*.tmproject
