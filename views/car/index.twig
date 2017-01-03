@@ -1,4 +1,3 @@
-
 <input type="text" placeholder="Trier" id="inputfilter">
 
 <table class="table table-striped tablesorter" id="cars-table">
@@ -17,7 +16,8 @@
             <td><a href="http://localhost/mouf-tests/car/{{ car.id }}/edit">{{ car.name }}</a></td>
             <td>{{ car.brand.name }}</td> {# Retrieve cars' brand #}
             <td>{{ car.maxspeed }}</td>
-            <td><a href=""  data-id="{{ car.id }}" class="btn btn-danger delete-car">Supprimer</a></td> {# Delete button #}
+            <td><a href="" data-id="{{ car.id }}" class="btn btn-danger delete-car">Supprimer</a>
+            </td> {# Delete button #}
         </tr>
     {% endfor %}
     </tbody>
@@ -37,7 +37,8 @@
         {% endif %}
 
         {% for i in 1..pageCount %}
-            <li {% if i == current %} class="disabled" {% endif %}><a href="http://localhost/mouf-tests/car/{{ i }}">{{ i }}</a></li>
+            <li {% if i == current %} class="disabled" {% endif %}><a
+                        href="http://localhost/mouf-tests/car/{{ i }}">{{ i }}</a></li>
         {% endfor %}
 
         {% if current < pageCount %}
@@ -54,24 +55,23 @@
 <a href="http://localhost/mouf-tests/car/create" class="btn btn-success">Ajouter un modèle</a>
 
 
-
 <script>
 
 
-    $(document).ready(function(){
+    $(document).ready(function () {
 
         $('input#inputfilter').liveSearch({
-            table : 'table' // table selector
+            table: 'table' // table selector
         });
 
 
         $("#cars-table").tablesorter();
 
-        $(".delete-car").click(function(){
+        $(".delete-car").click(function () {
             var id = this.dataset.id;
             $.ajax({
                 type: 'DELETE',
-                url: 'http://localhost/mouf-tests/car/'+ id +'/delete'
+                url: 'http://localhost/mouf-tests/car/' + id + '/delete'
             });
         });
     });

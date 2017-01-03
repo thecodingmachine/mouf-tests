@@ -1,9 +1,5 @@
 <form action="http://localhost/mouf-tests/car/update" method="post">
-    <input type="hidden" name="_method" value="put" />
     <input type="hidden" name="id" value="{{ car.id }}">
-
-    {{ dump(car.brand_id) }}
-
     <div class="form-group">
         <label for="name">Model</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Model" value="{{ car.name }}">
