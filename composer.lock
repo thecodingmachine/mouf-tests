@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b4b804d94061e0daa7c8a442155867f",
-    "content-hash": "9124309f742c2026a8e9d5007cd3e9de",
+    "content-hash": "3ea0404ab0fb2fd94b90430c7d4bd124",
     "packages": [
         {
             "name": "analog/analog",
@@ -54,7 +53,7 @@
                 "logging",
                 "syslog"
             ],
-            "time": "2016-08-10 22:15:10"
+            "time": "2016-08-10T22:15:10+00:00"
         },
         {
             "name": "beberlei/porpaginas",
@@ -104,7 +103,7 @@
                 "paginator",
                 "paging"
             ],
-            "time": "2015-09-17 10:25:32"
+            "time": "2015-09-17T10:25:32+00:00"
         },
         {
             "name": "cache/adapter-common",
@@ -159,7 +158,7 @@
                 "psr-6",
                 "tag"
             ],
-            "time": "2016-07-31 18:10:41"
+            "time": "2016-07-31T18:10:41+00:00"
         },
         {
             "name": "cache/hierarchical-cache",
@@ -216,7 +215,7 @@
                 "psr-6",
                 "tag"
             ],
-            "time": "2016-08-07 14:49:33"
+            "time": "2016-08-07T14:49:33+00:00"
         },
         {
             "name": "cache/taggable-cache",
@@ -274,7 +273,7 @@
                 "psr6",
                 "tag"
             ],
-            "time": "2016-08-08 17:20:09"
+            "time": "2016-08-08T17:20:09+00:00"
         },
         {
             "name": "cache/void-adapter",
@@ -337,7 +336,7 @@
                 "tag",
                 "void"
             ],
-            "time": "2016-08-07 15:04:55"
+            "time": "2016-08-07T15:04:55+00:00"
         },
         {
             "name": "clue/graph",
@@ -382,7 +381,7 @@
                 "network",
                 "vertex"
             ],
-            "time": "2015-03-07 18:11:31"
+            "time": "2015-03-07T18:11:31+00:00"
         },
         {
             "name": "components/bootstrap",
@@ -450,7 +449,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2016-07-26 05:59:20"
+            "time": "2016-07-26T05:59:20+00:00"
         },
         {
             "name": "components/jquery",
@@ -492,7 +491,7 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2016-05-25 06:50:04"
+            "time": "2016-05-25T06:50:04+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -519,7 +518,7 @@
                 "MIT"
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
-            "time": "2014-12-30 15:22:37"
+            "time": "2014-12-30T15:22:37+00:00"
         },
         {
             "name": "container-interop/service-provider",
@@ -550,39 +549,39 @@
             ],
             "description": "Promoting container interoperability through standard service providers",
             "homepage": "https://github.com/container-interop/service-provider",
-            "time": "2016-05-16 07:42:22"
+            "time": "2016-05-16T07:42:22+00:00"
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.2.7",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535"
+                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
-                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
+                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "1.*",
-                "php": ">=5.3.2"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "^5.6.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Annotations\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -618,20 +617,20 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2015-08-31 12:32:49"
+            "time": "2016-12-30T15:59:45+00:00"
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6"
+                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/f8af318d14bdb0eff0336795b428b547bd39ccb6",
-                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/b6f544a20f4807e81f7044d31e679ccbb1866dc3",
+                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3",
                 "shasum": ""
             },
             "require": {
@@ -688,7 +687,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-12-31 16:37:02"
+            "time": "2016-10-29T11:16:17+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -754,20 +753,20 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2015-04-14 22:21:58"
+            "time": "2015-04-14T22:21:58+00:00"
         },
         {
             "name": "doctrine/common",
-            "version": "v2.6.1",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "a579557bc689580c19fee4e27487a67fe60defc0"
+                "reference": "7bce00698899aa2c06fe7365c76e4d78ddb15fa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/a579557bc689580c19fee4e27487a67fe60defc0",
-                "reference": "a579557bc689580c19fee4e27487a67fe60defc0",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/7bce00698899aa2c06fe7365c76e4d78ddb15fa3",
+                "reference": "7bce00698899aa2c06fe7365c76e4d78ddb15fa3",
                 "shasum": ""
             },
             "require": {
@@ -827,7 +826,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2015-12-25 13:18:31"
+            "time": "2016-11-30T16:50:46+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -898,7 +897,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2016-09-09 19:13:33"
+            "time": "2016-09-09T19:13:33+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -965,7 +964,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06 14:35:42"
+            "time": "2015-11-06T14:35:42+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1019,29 +1018,29 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09 13:34:57"
+            "time": "2014-09-09T13:34:57+00:00"
         },
         {
             "name": "filp/whoops",
-            "version": "2.1.3",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "8828aaa2178e0a19325522e2a45282ff0a14649b"
+                "reference": "2abce9d956589122c6443d6265f01cf7e9388e3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/8828aaa2178e0a19325522e2a45282ff0a14649b",
-                "reference": "8828aaa2178e0a19325522e2a45282ff0a14649b",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/2abce9d956589122c6443d6265f01cf7e9388e3c",
+                "reference": "2abce9d956589122c6443d6265f01cf7e9388e3c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^5.5.9 || ^7.0"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
                 "phpunit/phpunit": "^4.8 || ^5.0",
-                "symfony/var-dumper": "~3.0"
+                "symfony/var-dumper": "^2.6 || ^3.0"
             },
             "suggest": {
                 "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
@@ -1070,7 +1069,7 @@
                 }
             ],
             "description": "php error handling for cool kids",
-            "homepage": "https://github.com/filp/whoops",
+            "homepage": "https://filp.github.io/whoops/",
             "keywords": [
                 "error",
                 "exception",
@@ -1079,7 +1078,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2016-05-06 18:25:35"
+            "time": "2016-12-26T16:13:31+00:00"
         },
         {
             "name": "franzl/whoops-middleware",
@@ -1109,7 +1108,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2016-04-27 14:08:29"
+            "time": "2016-04-27T14:08:29+00:00"
         },
         {
             "name": "graphp/algorithms",
@@ -1159,20 +1158,76 @@
                 "prim",
                 "shortest path"
             ],
-            "time": "2015-03-08 10:12:01"
+            "time": "2015-03-08T10:12:01+00:00"
         },
         {
-            "name": "greenlion/php-sql-parser",
-            "version": "v4.1.0",
+            "name": "graylog2/gelf-php",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/greenlion/PHP-SQL-Parser.git",
-                "reference": "1c6064d28e6192a16e91ff4de87477d646bb977d"
+                "url": "https://github.com/bzikarsky/gelf-php.git",
+                "reference": "0cb872928246bada1b6a5f504a7c3589f1c1174d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greenlion/PHP-SQL-Parser/zipball/1c6064d28e6192a16e91ff4de87477d646bb977d",
-                "reference": "1c6064d28e6192a16e91ff4de87477d646bb977d",
+                "url": "https://api.github.com/repos/bzikarsky/gelf-php/zipball/0cb872928246bada1b6a5f504a7c3589f1c1174d",
+                "reference": "0cb872928246bada1b6a5f504a7c3589f1c1174d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gelf\\": "src/Gelf"
+                },
+                "files": [
+                    "src/check_technical_requirements.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Zikarsky",
+                    "email": "benjamin@zikarsky.de"
+                },
+                {
+                    "name": "gelf-php contributors",
+                    "homepage": "https://github.com/bzikarsky/gelf-php/contributors"
+                }
+            ],
+            "description": "A php implementation to send log-messages to a GELF compatible backend like Graylog2.",
+            "time": "2016-11-21T13:31:39+00:00"
+        },
+        {
+            "name": "greenlion/php-sql-parser",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/greenlion/PHP-SQL-Parser.git",
+                "reference": "45227af0f6ed2c094cefdbc5b921889605c0c1ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greenlion/PHP-SQL-Parser/zipball/45227af0f6ed2c094cefdbc5b921889605c0c1ff",
+                "reference": "45227af0f6ed2c094cefdbc5b921889605c0c1ff",
                 "shasum": ""
             },
             "require": {
@@ -1215,44 +1270,35 @@
                 "parser",
                 "sql"
             ],
-            "time": "2016-07-08 18:22:23"
+            "time": "2016-10-12T04:29:55+00:00"
         },
         {
-            "name": "logger/essentials",
-            "version": "0.1.9",
+            "name": "http-interop/http-middleware",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/LoggerEssentials/LoggerEssentials.git",
-                "reference": "b145c098ea51b0ed0a1c6515b56c32980826c3c1"
+                "url": "https://github.com/http-interop/http-middleware.git",
+                "reference": "ff545c87e97bf4d88f0cb7eb3e89f99aaa53d7a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LoggerEssentials/LoggerEssentials/zipball/b145c098ea51b0ed0a1c6515b56c32980826c3c1",
-                "reference": "b145c098ea51b0ed0a1c6515b56c32980826c3c1",
+                "url": "https://api.github.com/repos/http-interop/http-middleware/zipball/ff545c87e97bf4d88f0cb7eb3e89f99aaa53d7a9",
+                "reference": "ff545c87e97bf4d88f0cb7eb3e89f99aaa53d7a9",
                 "shasum": ""
             },
             "require": {
-                "logger/logger": "~0.0.1@stable",
-                "php": ">= 5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7"
-            },
-            "suggest": {
-                "logger/chromephp": "Logger for the chrome php plugin",
-                "logger/firephp": "Logger for the firephp plugin",
-                "logger/loggly": "Logger api to loggly.com",
-                "logger/network": "Some components to write logging data via tcp or udp to a network-port",
-                "logger/newrelic": "Logger for NewRelic",
-                "logger/pushover": "Logger api to pushover.net",
-                "logger/rollbar": "Logger api to rollbar.com",
-                "logger/syslog": "Logger for syslogd",
-                "logger/zendmonitor": "Logger for the zend server monitor api"
+                "php": ">=5.3.0",
+                "psr/http-message": "^1.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Logger\\": "src/"
+                    "Interop\\Http\\Middleware\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1261,50 +1307,22 @@
             ],
             "authors": [
                 {
-                    "name": "ron",
-                    "email": "ron.kirschler@gmail.com"
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
                 }
             ],
-            "description": "Advanced logging component library",
-            "time": "2016-05-20 08:17:50"
-        },
-        {
-            "name": "logger/logger",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LoggerEssentials/Logger.git",
-                "reference": "82f5af45115d04415d1e47ca7d52fe79cf68ca36"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LoggerEssentials/Logger/zipball/82f5af45115d04415d1e47ca7d52fe79cf68ca36",
-                "reference": "82f5af45115d04415d1e47ca7d52fe79cf68ca36",
-                "shasum": ""
-            },
-            "require": {
-                "psr/log": "1.0"
-            },
-            "suggest": {
-                "logger/essentials": "Advanced logging component library"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
+            "description": "Common interface for HTTP middleware",
+            "keywords": [
+                "factory",
+                "http",
+                "middleware",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
             ],
-            "authors": [
-                {
-                    "name": "ron",
-                    "email": "ron.kirschler@gmail.com"
-                }
-            ],
-            "time": "2014-11-09 13:56:26"
+            "time": "2016-09-25T13:30:27+00:00"
         },
         {
             "name": "mouf/classname-mapper",
@@ -1350,7 +1368,7 @@
                 "autoload",
                 "composer"
             ],
-            "time": "2016-02-01 09:23:40"
+            "time": "2016-02-01T09:23:40+00:00"
         },
         {
             "name": "mouf/database.doctrine-dbal-wrapper",
@@ -1417,16 +1435,16 @@
         },
         {
             "name": "mouf/database.tdbm",
-            "version": "v4.1.5",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/database.tdbm.git",
-                "reference": "cdba14e70b013a025a186079b9f6c008f527e84a"
+                "reference": "1584c510f8ce66410354b35122eaf33d8108b4ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/database.tdbm/zipball/cdba14e70b013a025a186079b9f6c008f527e84a",
-                "reference": "cdba14e70b013a025a186079b9f6c008f527e84a",
+                "url": "https://api.github.com/repos/thecodingmachine/database.tdbm/zipball/1584c510f8ce66410354b35122eaf33d8108b4ef",
+                "reference": "1584c510f8ce66410354b35122eaf33d8108b4ef",
                 "shasum": ""
             },
             "require": {
@@ -1434,21 +1452,22 @@
                 "doctrine/cache": "~1.5",
                 "doctrine/dbal": "~2.5",
                 "doctrine/inflector": "~1.0",
-                "greenlion/php-sql-parser": "^4.0",
-                "logger/essentials": "^0.1.9",
+                "greenlion/php-sql-parser": "^4.1",
                 "mouf/classname-mapper": "~1.0",
                 "mouf/database.doctrine-dbal-wrapper": "~1.1",
-                "mouf/magic-query": "~1.1",
+                "mouf/magic-query": "^1.2.1",
                 "mouf/mouf": "~2.0.10",
                 "mouf/schema-analyzer": "^1.1",
                 "mouf/utils.common.conditioninterface": "~2.0",
                 "mouf/utils.common.doctrine-cache-wrapper": "~1.0",
+                "phlib/logger": "^2.1",
                 "php": ">=7.0",
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.5",
-                "satooshi/php-coveralls": "~1.0"
+                "phpunit/phpunit": "^5.5",
+                "satooshi/php-coveralls": "^1.0",
+                "wa72/simplelogger": "^1.0"
             },
             "suggest": {
                 "ext/weakref": "Allows efficient memory management. Useful for batches."
@@ -1550,7 +1569,7 @@
                 "orm",
                 "persistance"
             ],
-            "time": "2016-09-27 15:01:07"
+            "time": "2016-11-25T12:18:52+00:00"
         },
         {
             "name": "mouf/html.htmlelement",
@@ -1601,7 +1620,7 @@
                 "interface",
                 "tohtml"
             ],
-            "time": "2014-06-03 20:28:43"
+            "time": "2014-06-03T20:28:43+00:00"
         },
         {
             "name": "mouf/html.renderer",
@@ -1679,7 +1698,7 @@
                 "render",
                 "tohtml"
             ],
-            "time": "2015-10-14 08:39:26"
+            "time": "2015-10-14T08:39:26+00:00"
         },
         {
             "name": "mouf/html.renderer.twig-extensions",
@@ -1745,7 +1764,7 @@
                 "render",
                 "tohtml"
             ],
-            "time": "2016-04-04 16:24:06"
+            "time": "2016-04-04T16:24:06+00:00"
         },
         {
             "name": "mouf/html.template.bootstrap",
@@ -1807,7 +1826,7 @@
                 "mouf",
                 "template"
             ],
-            "time": "2016-09-07 13:53:19"
+            "time": "2016-09-07T13:53:19+00:00"
         },
         {
             "name": "mouf/html.template.templateinterface",
@@ -1852,7 +1871,7 @@
                 "template",
                 "templateinterface"
             ],
-            "time": "2014-12-10 16:01:57"
+            "time": "2014-12-10T16:01:57+00:00"
         },
         {
             "name": "mouf/html.utils.weblibrarymanager",
@@ -1921,7 +1940,7 @@
                 "javascript",
                 "mouf"
             ],
-            "time": "2015-02-12 13:38:09"
+            "time": "2015-02-12T13:38:09+00:00"
         },
         {
             "name": "mouf/html.utils.weblibrarymanager.component-installer",
@@ -1971,7 +1990,7 @@
                 "javascript",
                 "mouf"
             ],
-            "time": "2016-02-11 15:18:16"
+            "time": "2016-02-11T15:18:16+00:00"
         },
         {
             "name": "mouf/html.widgets.menu",
@@ -2179,20 +2198,20 @@
                 "mouf",
                 "query"
             ],
-            "time": "2016-09-16 09:21:33"
+            "time": "2016-09-16T09:21:33+00:00"
         },
         {
             "name": "mouf/mouf",
-            "version": "v2.0.21",
+            "version": "v2.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mouf.git",
-                "reference": "f2b19731daa98274b93d0ccdc88b8fbbc9b50187"
+                "reference": "a6f15d5fc1430bcc7f906ea91e3b706722cedae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mouf/zipball/f2b19731daa98274b93d0ccdc88b8fbbc9b50187",
-                "reference": "f2b19731daa98274b93d0ccdc88b8fbbc9b50187",
+                "url": "https://api.github.com/repos/thecodingmachine/mouf/zipball/a6f15d5fc1430bcc7f906ea91e3b706722cedae3",
+                "reference": "a6f15d5fc1430bcc7f906ea91e3b706722cedae3",
                 "shasum": ""
             },
             "require": {
@@ -2328,7 +2347,7 @@
                 "ioc",
                 "mouf"
             ],
-            "time": "2016-09-27 12:38:19"
+            "time": "2016-11-25T09:25:49+00:00"
         },
         {
             "name": "mouf/mouf-installer",
@@ -2376,7 +2395,7 @@
                 "install",
                 "mouf"
             ],
-            "time": "2014-06-03 20:47:09"
+            "time": "2014-06-03T20:47:09+00:00"
         },
         {
             "name": "mouf/mouf-validators-interface",
@@ -2418,7 +2437,7 @@
                 "mouf",
                 "validators"
             ],
-            "time": "2013-10-29 18:21:58"
+            "time": "2013-10-29T18:21:58+00:00"
         },
         {
             "name": "mouf/mvc.splash",
@@ -2426,12 +2445,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mvc.splash.git",
-                "reference": "ffcd93cfab378ec808e63754118a59369d02459b"
+                "reference": "d1d645830abb6a9f0054f209d3328117197e2bbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mvc.splash/zipball/ffcd93cfab378ec808e63754118a59369d02459b",
-                "reference": "ffcd93cfab378ec808e63754118a59369d02459b",
+                "url": "https://api.github.com/repos/thecodingmachine/mvc.splash/zipball/d1d645830abb6a9f0054f209d3328117197e2bbb",
+                "reference": "d1d645830abb6a9f0054f209d3328117197e2bbb",
                 "shasum": ""
             },
             "require": {
@@ -2502,7 +2521,7 @@
                 "mvc",
                 "splash"
             ],
-            "time": "2016-07-20 10:19:44"
+            "time": "2016-11-16 16:31:51"
         },
         {
             "name": "mouf/mvc.splash-common",
@@ -2510,12 +2529,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mvc.splash-common.git",
-                "reference": "3a4aeb1ea2e5cdc5b3793c648aa8b19653c27e17"
+                "reference": "aaf1a710a129768f33caa1eb238cc15b90b138f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mvc.splash-common/zipball/3a4aeb1ea2e5cdc5b3793c648aa8b19653c27e17",
-                "reference": "3a4aeb1ea2e5cdc5b3793c648aa8b19653c27e17",
+                "url": "https://api.github.com/repos/thecodingmachine/mvc.splash-common/zipball/aaf1a710a129768f33caa1eb238cc15b90b138f9",
+                "reference": "aaf1a710a129768f33caa1eb238cc15b90b138f9",
                 "shasum": ""
             },
             "require": {
@@ -2534,7 +2553,7 @@
                 "thecodingmachine/common-factories": "dev-master",
                 "thecodingmachine/middleware-list-universal-module": "~1.0",
                 "zendframework/zend-diactoros": "~1.0",
-                "zendframework/zend-stratigility": "~1.0"
+                "zendframework/zend-stratigility": "^1.3"
             },
             "require-dev": {
                 "cache/array-adapter": "^0.4.0",
@@ -2636,7 +2655,7 @@
                 "splash",
                 "splash-common"
             ],
-            "time": "2016-09-26 16:06:16"
+            "time": "2016-11-29 10:39:48"
         },
         {
             "name": "mouf/mvc.splash-ui",
@@ -2727,7 +2746,7 @@
                 "MIT"
             ],
             "description": "A package that offers utility tools to analyze database schemas (on top of Doctrine DBAL)",
-            "time": "2016-03-25 15:40:18"
+            "time": "2016-03-25T15:40:18+00:00"
         },
         {
             "name": "mouf/utils.action.action-interface",
@@ -2771,7 +2790,7 @@
                 "interface",
                 "mouf"
             ],
-            "time": "2013-10-29 18:21:59"
+            "time": "2013-10-29T18:21:59+00:00"
         },
         {
             "name": "mouf/utils.action.common-action",
@@ -2820,7 +2839,7 @@
                 "actioninterface",
                 "mouf"
             ],
-            "time": "2015-01-23 11:09:24"
+            "time": "2015-01-23T11:09:24+00:00"
         },
         {
             "name": "mouf/utils.cache.apc-cache",
@@ -2879,7 +2898,7 @@
                 "cache",
                 "mouf"
             ],
-            "time": "2016-03-23 11:27:26"
+            "time": "2016-03-23T11:27:26+00:00"
         },
         {
             "name": "mouf/utils.cache.cache-interface",
@@ -2931,7 +2950,7 @@
                 "interface",
                 "mouf"
             ],
-            "time": "2015-09-08 16:07:35"
+            "time": "2015-09-08T16:07:35+00:00"
         },
         {
             "name": "mouf/utils.cache.file-cache",
@@ -2988,7 +3007,7 @@
                 "file",
                 "mouf"
             ],
-            "time": "2016-09-22 08:32:19"
+            "time": "2016-09-22T08:32:19+00:00"
         },
         {
             "name": "mouf/utils.cache.in-memory-cache",
@@ -3032,7 +3051,7 @@
                 "in-memory",
                 "mouf"
             ],
-            "time": "2015-07-10 13:31:07"
+            "time": "2015-07-10T13:31:07+00:00"
         },
         {
             "name": "mouf/utils.cache.psr6-ui",
@@ -3085,7 +3104,7 @@
                 "mouf",
                 "psr-6"
             ],
-            "time": "2016-06-07 15:10:30"
+            "time": "2016-06-07T15:10:30+00:00"
         },
         {
             "name": "mouf/utils.common.conditioninterface",
@@ -3127,7 +3146,7 @@
                 "condition",
                 "interface"
             ],
-            "time": "2015-01-28 15:50:43"
+            "time": "2015-01-28T15:50:43+00:00"
         },
         {
             "name": "mouf/utils.common.doctrine-annotations-wrapper",
@@ -3390,7 +3409,7 @@
                 "url",
                 "urlinterface"
             ],
-            "time": "2013-10-29 18:21:59"
+            "time": "2013-10-29T18:21:59+00:00"
         },
         {
             "name": "mouf/utils.composite-exception",
@@ -3425,16 +3444,16 @@
         },
         {
             "name": "mouf/utils.console",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/utils.console.git",
-                "reference": "69df03702e5d53898ca50c9e7f0007b12b406987"
+                "reference": "e36013e6d25603645e56969d45f329981d6775ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/utils.console/zipball/69df03702e5d53898ca50c9e7f0007b12b406987",
-                "reference": "69df03702e5d53898ca50c9e7f0007b12b406987",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.console/zipball/e36013e6d25603645e56969d45f329981d6775ee",
+                "reference": "e36013e6d25603645e56969d45f329981d6775ee",
                 "shasum": ""
             },
             "require": {
@@ -3478,7 +3497,7 @@
                 "console",
                 "mouf"
             ],
-            "time": "2016-06-14 08:04:43"
+            "time": "2016-08-02T11:35:56+00:00"
         },
         {
             "name": "mouf/utils.constants.debug",
@@ -3533,7 +3552,7 @@
                 "debug",
                 "mouf"
             ],
-            "time": "2014-06-16 09:18:43"
+            "time": "2014-06-16T09:18:43+00:00"
         },
         {
             "name": "mouf/utils.constants.secret",
@@ -3588,7 +3607,7 @@
                 "random",
                 "secret"
             ],
-            "time": "2013-11-05 16:10:29"
+            "time": "2013-11-05T16:10:29+00:00"
         },
         {
             "name": "mouf/utils.log.psr.errorlog_logger",
@@ -3644,7 +3663,7 @@
                 "log",
                 "logger"
             ],
-            "time": "2013-10-29 18:36:52"
+            "time": "2013-10-29T18:36:52+00:00"
         },
         {
             "name": "mouf/utils.session.session-manager",
@@ -3700,7 +3719,7 @@
                 "mouf",
                 "session"
             ],
-            "time": "2015-08-10 14:03:37"
+            "time": "2015-08-10T14:03:37+00:00"
         },
         {
             "name": "mouf/utils.value.common-value",
@@ -3751,7 +3770,7 @@
                 "mouf",
                 "valueinterface"
             ],
-            "time": "2016-02-26 13:50:11"
+            "time": "2016-02-26T13:50:11+00:00"
         },
         {
             "name": "mouf/utils.value.value-interface",
@@ -3799,20 +3818,20 @@
                 "mouf",
                 "value"
             ],
-            "time": "2013-10-29 18:22:00"
+            "time": "2013-10-29T18:22:00+00:00"
         },
         {
             "name": "oscarotero/psr7-middlewares",
-            "version": "v3.16.2",
+            "version": "v3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/psr7-middlewares.git",
-                "reference": "b082b7ec31dabe90ed1da35271adaae3f4573c7f"
+                "reference": "654a85dcc848531322b75283ae0b36fa8a42f2cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/psr7-middlewares/zipball/b082b7ec31dabe90ed1da35271adaae3f4573c7f",
-                "reference": "b082b7ec31dabe90ed1da35271adaae3f4573c7f",
+                "url": "https://api.github.com/repos/oscarotero/psr7-middlewares/zipball/654a85dcc848531322b75283ae0b36fa8a42f2cd",
+                "reference": "654a85dcc848531322b75283ae0b36fa8a42f2cd",
                 "shasum": ""
             },
             "require": {
@@ -3822,20 +3841,23 @@
                 "aura/router": "^3.0",
                 "aura/session": "2.*",
                 "filp/whoops": "2.*",
+                "friendsofphp/php-cs-fixer": "^1.12",
                 "google/recaptcha": "^1.1",
                 "imagecow/imagecow": "^2.0",
+                "justinrainbow/json-schema": ">=3.0",
                 "league/route": "^2.0",
                 "m6web/firewall": "~1.0",
-                "matthiasmullie/scrapbook": "^1.0",
+                "matthiasmullie/scrapbook": "^1.0.1",
                 "maximebf/debugbar": "~1.11",
                 "micheh/psr7-cache": "^0.5.0",
+                "mikey179/vfsstream": "^1.6",
                 "mobiledetect/mobiledetectlib": "^2.8",
                 "monolog/monolog": "^1.17",
                 "mrclay/minify": "^2.2",
                 "neomerx/cors-psr7": "^1.0",
                 "nikic/fast-route": "0.*",
-                "paragonie/csp-builder": "^1.2",
-                "phpunit/phpunit": "*",
+                "paragonie/csp-builder": "^1.3",
+                "phpunit/phpunit": ">=4.8",
                 "piwik/referrer-spam-blacklist": "^1.0",
                 "ramsey/uuid": "^3.1",
                 "relay/relay": "1.*",
@@ -3849,6 +3871,7 @@
                 "filp/whoops": "To use Whoops",
                 "google/recaptcha": "To use Recaptcha",
                 "imagecow/imagecow": "To use ImageTransformer",
+                "justinrainbow/json-schema": "To validate JSON with route-matched schemas.",
                 "league/route": "To use LeagueRoute",
                 "m6web/firewall": "To use Firewall",
                 "maximebf/debugbar": "To use DebugBar",
@@ -3891,7 +3914,49 @@
                 "psr-7",
                 "psr-messages"
             ],
-            "time": "2016-09-02 14:16:24"
+            "time": "2016-11-05T09:32:14+00:00"
+        },
+        {
+            "name": "phlib/logger",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phlib/logger.git",
+                "reference": "3f538e2093e0f1c29eb8745b50b59162acc70425"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phlib/logger/zipball/3f538e2093e0f1c29eb8745b50b59162acc70425",
+                "reference": "3f538e2093e0f1c29eb8745b50b59162acc70425",
+                "shasum": ""
+            },
+            "require": {
+                "graylog2/gelf-php": "^1.3",
+                "php": "^5.4|^7",
+                "psr/log": "^1.0",
+                "symfony/console": "^2.5.12|^3"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phlib\\Logger\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Adam Whale",
+                    "email": "adam.whale@emailcenteruk.com"
+                }
+            ],
+            "description": "Additional Logging Classes",
+            "time": "2016-10-27T11:47:46+00:00"
         },
         {
             "name": "psr/cache",
@@ -3937,7 +4002,7 @@
                 "psr",
                 "psr-6"
             ],
-            "time": "2016-08-06 20:24:11"
+            "time": "2016-08-06T20:24:11+00:00"
         },
         {
             "name": "psr/http-message",
@@ -3987,26 +4052,34 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06 14:39:51"
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4020,25 +4093,26 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v3.1.5",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "6cb0872fb57b38b3b09ff213c21ed693956b9eb0"
+                "reference": "d12aa9ca20f4db83ec58410978dab6afcb9d6aaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/6cb0872fb57b38b3b09ff213c21ed693956b9eb0",
-                "reference": "6cb0872fb57b38b3b09ff213c21ed693956b9eb0",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d12aa9ca20f4db83ec58410978dab6afcb9d6aaa",
+                "reference": "d12aa9ca20f4db83ec58410978dab6afcb9d6aaa",
                 "shasum": ""
             },
             "require": {
@@ -4049,17 +4123,19 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/filesystem": "~2.8|~3.0",
                 "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
+                "symfony/filesystem": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -4086,20 +4162,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-28 00:11:12"
+            "time": "2016-12-11T14:34:22+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.1.5",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8"
+                "reference": "9f923e68d524a3095c5a2ae5fc7220c7cbc12231"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
-                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/9f923e68d524a3095c5a2ae5fc7220c7cbc12231",
+                "reference": "9f923e68d524a3095c5a2ae5fc7220c7cbc12231",
                 "shasum": ""
             },
             "require": {
@@ -4116,7 +4192,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -4143,20 +4219,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 11:02:40"
+            "time": "2016-11-16T22:18:16+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.12",
+            "version": "v2.8.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8"
+                "reference": "25c576abd4e0f212e678fe8b2bd9a9a98c7ea934"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/889983a79a043dfda68f38c38b6dba092dd49cd8",
-                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/25c576abd4e0f212e678fe8b2bd9a9a98c7ea934",
+                "reference": "25c576abd4e0f212e678fe8b2bd9a9a98c7ea934",
                 "shasum": ""
             },
             "require": {
@@ -4203,20 +4279,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-28 16:56:28"
+            "time": "2016-10-13T01:43:15+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594"
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
                 "shasum": ""
             },
             "require": {
@@ -4228,7 +4304,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -4262,7 +4338,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-05-18 14:26:46"
+            "time": "2016-11-14T01:06:16+00:00"
         },
         {
             "name": "tedivm/stash",
@@ -4322,7 +4398,7 @@
                 "redis",
                 "sessions"
             ],
-            "time": "2016-02-10 22:23:16"
+            "time": "2016-02-10T22:23:16+00:00"
         },
         {
             "name": "thecodingmachine/common-factories",
@@ -4397,16 +4473,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.26.0",
+            "version": "v1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "81c2b5fd36581370c7731387f05dcdb577050513"
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/81c2b5fd36581370c7731387f05dcdb577050513",
-                "reference": "81c2b5fd36581370c7731387f05dcdb577050513",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c6ff71094fde15d12398eaba029434b013dc5e59",
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59",
                 "shasum": ""
             },
             "require": {
@@ -4414,12 +4490,12 @@
             },
             "require-dev": {
                 "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~2.7"
+                "symfony/phpunit-bridge": "~3.2@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.26-dev"
+                    "dev-master": "1.30-dev"
                 }
             },
             "autoload": {
@@ -4454,20 +4530,20 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-10-02 16:19:13"
+            "time": "2016-12-23T11:06:22+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.3.6",
+            "version": "1.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "a60da179c37f2c4e44ef734d0b92824a58943f7f"
+                "reference": "969ff423d3f201da3ff718a5831bb999bb0669b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/a60da179c37f2c4e44ef734d0b92824a58943f7f",
-                "reference": "a60da179c37f2c4e44ef734d0b92824a58943f7f",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/969ff423d3f201da3ff718a5831bb999bb0669b0",
+                "reference": "969ff423d3f201da3ff718a5831bb999bb0669b0",
                 "shasum": ""
             },
             "require": {
@@ -4504,7 +4580,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2016-09-07 17:57:29"
+            "time": "2016-10-11T13:25:21+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -4548,31 +4624,32 @@
                 "escaper",
                 "zf2"
             ],
-            "time": "2016-06-30 19:48:38"
+            "time": "2016-06-30T19:48:38+00:00"
         },
         {
             "name": "zendframework/zend-stratigility",
-            "version": "1.2.1",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stratigility.git",
-                "reference": "b78388f096f669f9a9f15dabe5fa73c4d9fd9a09"
+                "reference": "c410d367bb85f0a3cca44f112957d0ee28895d19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/b78388f096f669f9a9f15dabe5fa73c4d9fd9a09",
-                "reference": "b78388f096f669f9a9f15dabe5fa73c4d9fd9a09",
+                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/c410d367bb85f0a3cca44f112957d0ee28895d19",
+                "reference": "c410d367bb85f0a3cca44f112957d0ee28895d19",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4.8 || ^7.0",
-                "psr/http-message": "~1.0.0",
-                "zendframework/zend-escaper": "~2.3"
+                "http-interop/http-middleware": "^0.2.0",
+                "php": "^5.6 || ^7.0",
+                "psr/http-message": "^1.0",
+                "zendframework/zend-escaper": "^2.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.7",
-                "squizlabs/php_codesniffer": "^2.3.1",
-                "zendframework/zend-diactoros": "~1.0"
+                "phpunit/phpunit": "^4.7 || ^5.5",
+                "squizlabs/php_codesniffer": "^2.6.2",
+                "zendframework/zend-diactoros": "^1.0"
             },
             "suggest": {
                 "psr/http-message-implementation": "Please install a psr/http-message-implementation to consume Stratigility; e.g., zendframework/zend-diactoros"
@@ -4580,8 +4657,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev",
-                    "dev-develop": "1.3-dev"
+                    "dev-master": "1.3.0-dev",
+                    "dev-develop": "2.0.0-dev"
                 }
             },
             "autoload": {
@@ -4600,7 +4677,7 @@
                 "middleware",
                 "psr-7"
             ],
-            "time": "2016-03-24 22:10:30"
+            "time": "2016-11-11T00:16:05+00:00"
         }
     ],
     "packages-dev": [],

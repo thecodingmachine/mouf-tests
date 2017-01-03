@@ -1,0 +1,36 @@
+<form action="http://localhost/mouf-tests/car/update" method="post">
+    <input type="hidden" name="_method" value="put" />
+    <input type="hidden" name="id" value="{{ car.id }}">
+
+    {{ dump(car.brand_id) }}
+
+    <div class="form-group">
+        <label for="name">Model</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Model" value="{{ car.name }}">
+    </div>
+
+    <div class="form=group">
+        <label for="max_speed">Max. Speed</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="max_speed" name="max_speed" placeholder="Max. Speed"
+                   value="{{ car.maxspeed }}">
+            <span class="input-group-addon">kph</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="brand">Brand</label>
+
+        <select name="brand_id" id="brand" class="form-control">
+            {% for brand in brands %}
+                <option value="{{ brand.id }}">{{ brand.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-default">Update</button>
+</form>
+
+<div>
+    <a href="http://localhost/mouf-tests/car">Retour à la liste des voitures</a>
+</div>

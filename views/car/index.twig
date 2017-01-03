@@ -1,0 +1,78 @@
+
+<input type="text" placeholder="Trier" id="inputfilter">
+
+<table class="table table-striped tablesorter" id="cars-table">
+    <thead>
+    <tr>
+        <th>Model</th>
+        <th>Brand</th>
+        <th>Maximum Speed</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for car in cars %}
+        <tr>
+            <td><a href="http://localhost/mouf-tests/car/{{ car.id }}/edit">{{ car.name }}</a></td>
+            <td>{{ car.brand.name }}</td> {# Retrieve cars' brand #}
+            <td>{{ car.maxspeed }}</td>
+            <td><a href=""  data-id="{{ car.id }}" class="btn btn-danger delete-car">Supprimer</a></td> {# Delete button #}
+        </tr>
+    {% endfor %}
+    </tbody>
+
+
+</table>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        {% if current > 1 %}
+            <li>
+                {# Get previous link #}
+                <a href="http://localhost/mouf-tests/car/{{ current - 1 }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+        {% endif %}
+
+        {% for i in 1..pageCount %}
+            <li {% if i == current %} class="disabled" {% endif %}><a href="http://localhost/mouf-tests/car/{{ i }}">{{ i }}</a></li>
+        {% endfor %}
+
+        {% if current < pageCount %}
+            <li>
+                {# Get next link #}
+                <a href="http://localhost/mouf-tests/car/{{ current + 1 }}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
+
+<a href="http://localhost/mouf-tests/car/create" class="btn btn-success">Ajouter un modèle</a>
+
+
+
+<script>
+
+
+    $(document).ready(function(){
+
+        $('input#inputfilter').liveSearch({
+            table : 'table' // table selector
+        });
+
+
+        $("#cars-table").tablesorter();
+
+        $(".delete-car").click(function(){
+            var id = this.dataset.id;
+            $.ajax({
+                type: 'DELETE',
+                url: 'http://localhost/mouf-tests/car/'+ id +'/delete'
+            });
+        });
+    });
+</script>
