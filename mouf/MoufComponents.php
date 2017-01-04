@@ -50,6 +50,12 @@ $moufManager->getConfigManager()->setConstantsDefinitionArray(array (
     'type' => 'string',
     'comment' => 'The password to access the database.',
   ),
+  'CARS_PER_PAGE' => 
+  array (
+    'defaultValue' => 4,
+    'type' => 'int',
+    'comment' => '',
+  ),
 ));
 
 $moufManager->setAllVariables(array (
@@ -1130,6 +1136,9 @@ return $driver;
         ),
       ),
     ),
+    'setterProperties' => 
+    array (
+    ),
   ),
   'doctrineMoufCache' => 
   array (
@@ -2002,6 +2011,13 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 }
 
 	/**
+	 * @return MoufTest\Controllers\CarController
+	 */
+	 public static function getCarController() {
+	 	return MoufManager::getMoufManager()->get('carController');
+	 }
+
+	/**
 	 * @return MoufTest\Model\Dao\CarDao
 	 */
 	 public static function getCarDao() {
@@ -2258,13 +2274,6 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getWhoopsMiddleware() {
 	 	return MoufManager::getMoufManager()->get('whoopsMiddleware');
-	 }
-
-	/**
-	 * @return MoufTest\Controllers\CarController
-	 */
-	 public static function getCarController() {
-	 	return MoufManager::getMoufManager()->get('carController');
 	 }
 
 }

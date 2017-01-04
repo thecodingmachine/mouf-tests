@@ -1,6 +1,8 @@
 <?php
 namespace MoufTest\Controllers;
 
+use Mouf\Annotations\varAnnotation;
+use Mouf\Html\Widgets\MessageService\Service\UserMessageInterface;
 use Mouf\Mvc\Splash\Annotations\Get;
 use Mouf\Mvc\Splash\Annotations\Post;
 use Mouf\Mvc\Splash\Annotations\Put;
@@ -84,17 +86,13 @@ class CarController
         $webLibraryManager->addJsFile('src/public/js/jquery.tablesorter.min.js');
         $webLibraryManager->addJsFile('src/public/js/livesearch.min.js');
 
-        // Define cars showed by page
-        $cars_per_page = 4;
-
         // Get every car in the database
         $carlist = $this->daoFactory->getCarDao()->findAll();
 
         // Count pages
-        $pageCount = ceil($carlist->count() / $cars_per_page);
+        $pageCount = ceil($carlist->count() / CARS_PER_PAGE);
 
         // Define current page
-        // TODO try to use getCurrentPage
         if (isset($page)) {
             $currentPage = intval($page);
 
@@ -106,11 +104,10 @@ class CarController
         }
 
         // Get the first entry (offset)
-        // TODO try to use first()
-        $offset = ($currentPage - 1) * $cars_per_page;
+        $offset = ($currentPage - 1) * CARS_PER_PAGE;
 
         // Paginate
-        $cars = $carlist->take($offset, $cars_per_page);
+        $cars = $carlist->take($offset, CARS_PER_PAGE);
 
         $this->content->addHtmlElement(new TwigTemplate($this->twig, 'views/car/index.twig',
             array(
@@ -124,57 +121,31 @@ class CarController
     }
 
     /**
-     * @URL("car/create")
-     * @Get
-     */
-    public function create()
-    {
-        $webLibraryManager = $this->template->getWebLibraryManager();
-        $webLibraryManager->addJsFile('src/public/js/jquery.validate.min.js');
-        $webLibraryManager->addJsFile('src/public/js/form-validation.js');
-
-        $brands = $this->daoFactory->getBrandDao()->findAll()->jsonSerialize();
-
-        $this->content->addHtmlElement(new TwigTemplate($this->twig, 'views/car/create.twig', array('brands' => $brands)));
-
-        return new HtmlResponse($this->template);
-    }
-
-    /**
-     * @URL("car/store")
-     * @Post
-     * @param int $brand_id
-     * @param string $name
-     * @param int $max_speed
-     * @return RedirectResponse
-     */
-    public function store($brand_id, $name, $max_speed)
-    {
-
-
-        $brand = $this->daoFactory->getBrandDao()->getById($brand_id);
-        $carBean = new CarBean($brand, $name, $max_speed);
-        $this->daoFactory->getCarDao()->save($carBean);
-
-        Return new RedirectResponse('http://localhost/mouf-tests/car/1');
-    }
-
-    /**
-     * @URL("car/{id}/edit")
+     * @URL("car/form/{id}")
      * @Get
      * @param int $id
      * @return HtmlResponse
      */
-    public function edit($id)
+    public function form($id = null)
     {
-        $brands = $this->daoFactory->getBrandDao()->findAll()->jsonSerialize();
+        //var_dump(empty($id));
+        $webLibraryManager = $this->template->getWebLibraryManager();
+        $webLibraryManager->addJsFile('src/public/js/jquery.validate.min.js');
+        $webLibraryManager->addJsFile('src/public/js/form-validation.js');
 
-        $car = $this->daoFactory->getCarDao()->getById($id);
+        $brands = $this->daoFactory->getBrandDao()->findAll();
 
-        // Let's add the twig file to the template.
-        $this->content->addHtmlElement(new TwigTemplate($this->twig, 'views/car/edit.twig', array(
-            "car" => $car,
-            "brands" => $brands)));
+        if (empty($id)) {
+            $params = array(
+                "brands" => $brands);
+        } else {
+            $car = $this->daoFactory->getCarDao()->getById($id);
+            $params = array(
+                "car" => $car,
+                "brands" => $brands);
+        }
+
+        $this->content->addHtmlElement(new TwigTemplate($this->twig, 'views/car/form.twig', $params));
 
         return new HtmlResponse($this->template);
     }
@@ -182,15 +153,26 @@ class CarController
     /**
      * @URL("car/update")
      * @Post
-     * @param int $id
+     * @param null $id
      * @param int $brand_id
      * @param string $name
      * @param int $max_speed
      * @return RedirectResponse
      */
-    public function update($id, $brand_id, $name, $max_speed)
+    public function update($id = null, $brand_id, $name, $max_speed)
     {
         $brand = $this->daoFactory->getBrandDao()->getById($brand_id);
+
+        if (empty($id)) {
+
+            $carBean = new CarBean($brand, $name, $max_speed);
+
+            $this->daoFactory->getCarDao()->save($carBean);
+
+            set_user_message("La voiture a bien été ajoutée", UserMessageInterface::SUCCESS);
+
+            return new RedirectResponse('http://localhost/mouf-tests/car/1');
+        }
 
         $carBean = $this->daoFactory->getCarDao()->getById($id);
 
@@ -200,7 +182,10 @@ class CarController
 
         $this->daoFactory->getCarDao()->save($carBean);
 
-        Return new RedirectResponse('http://localhost/mouf-tests/car/1');
+        set_user_message("La voiture a bien été modifiée", UserMessageInterface::SUCCESS);
+
+
+        return new RedirectResponse('http://localhost/mouf-tests/car/form/' . $id);
     }
 
     /**
@@ -212,5 +197,7 @@ class CarController
     {
         $brand = $this->daoFactory->getCarDao()->getById($id);
         $this->daoFactory->getCarDao()->delete($brand);
+
+        set_user_message("La voiture a bien été supprimée", UserMessageInterface::SUCCESS);
     }
 }

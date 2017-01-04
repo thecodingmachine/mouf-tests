@@ -8,8 +8,8 @@ require_once __DIR__.'/../vendor/mouf/database.doctrine-dbal-wrapper/src/DBALCon
 require_once __DIR__.'/../vendor/mouf/utils.cache.cache-interface/CacheAdmin.php';
 require_once __DIR__.'/../vendor/mouf/database.tdbm/src/TdbmAdmin.php';
 require_once __DIR__.'/../vendor/mouf/html.utils.weblibrarymanager/src/WebLibraryAdmin.php';
-require_once __DIR__.'/../vendor/mouf/utils.cache.psr6-ui/CacheAdmin.php';
 require_once __DIR__.'/../vendor/mouf/mvc.splash-ui/src/SplashUiAdmin.php';
+require_once __DIR__.'/../vendor/mouf/utils.cache.psr6-ui/CacheAdmin.php';
 require_once __DIR__.'/../vendor/mouf/mvc.splash/src/SplashAdmin.php';
 require_once __DIR__.'/../vendor/mouf/mvc.splash/src/Mouf/Mvc/Splash/SplashGenerateService.php';
 require_once __DIR__.'/../vendor/mouf/mvc.splash/src/Mouf/Mvc/Splash/Controllers/Admin/SplashPurgeCacheController.php';
