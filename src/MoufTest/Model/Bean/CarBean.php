@@ -13,5 +13,5 @@ use MoufTest\Model\Bean\Generated\CarBaseBean;
  */
 class CarBean extends CarBaseBean
 {
-
+    
 }
