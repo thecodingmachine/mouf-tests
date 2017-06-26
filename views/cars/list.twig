@@ -1,0 +1,48 @@
+{% extends 'views/base.twig' %}
+
+{% block content %}
+    <div ng-controller="listCarsController">
+        <a href="{{ constant('ROOT_URL') }}car">Create a new car</a>
+
+            <input type="text" ng-model="test" placeholder="Search car by model or brand" class="col-sm-12">
+
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <td class="col-sm-3">
+                            <a href="#" ng-click="sortBy('name')">Model</a>
+                            <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+                        </td>
+                        <td class="col-sm-3">
+                            <a href="#" ng-click="sortBy('brand.name')">Brand</a>
+                            <span class="sortorder" ng-show="propertyName === 'brand.name'" ng-class="{reverse: reverse}"></span>
+                        </td>
+                        <td class="col-sm-3">
+                            <a href="#" ng-click="sortBy('maxSpeed')">MaxSpeed</a>
+                            <span class="sortorder" ng-show="propertyName === 'maxSpeed'" ng-class="{reverse: reverse}"></span>
+                        </td>
+                        <td class="col-sm-3">
+                            <a href="#" ng-click="sortBy('delete')">Delete</a>
+                            <span class="sortorder" ng-show="propertyName === 'delete'" ng-class="{reverse: reverse}"></span>
+                        </td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="car in cars | orderBy:propertyName:reverse | filter : test track by $index" ng-click="editCar([[car.id]])">
+                        <td class="col-sm-3">[[car.name ]]</td>
+                        <td class="col-sm-3">[[ car.brand.name ]]</td>
+                        <td class="col-sm-3">[[ car.maxSpeed ]]</td>
+                        <td class="col-sm-3">
+                            <button class="btn btn-round btn-default" ng-click="removeCar([[car.id]]); $event.stopPropagation();">
+                                Remove
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <ul uib-pagination total-items="allCars.length" items-per-page="numPerPage" max-size="maxSize" ng-model="currentPage" ng-change="pageChanged()"></ul>
+
+    </div>
+{% endblock %}

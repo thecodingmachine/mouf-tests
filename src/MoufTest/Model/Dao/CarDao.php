@@ -14,5 +14,7 @@ use MoufTest\Model\Dao\Generated\CarBaseDao;
  */
 class CarDao extends CarBaseDao
 {
-
+    public function getCarByModel($name){
+        return $this->findOne("name = :name", [ "name" => $name ]);
+    }
 }
