@@ -744,6 +744,60 @@ return new \\Doctrine\\Common\\Annotations\\CachedReader($reader, $container->ge
       ),
     ),
   ),
+  'carController' => 
+  array (
+    'class' => 'MoufTest\\Controllers\\CarController',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'psr.errorLogLogger',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 'bootstrapTemplate',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => 'block.content',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => 'daoFactory',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      4 => 
+      array (
+        'value' => 'twigEnvironment',
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'carDao' => 
   array (
     'class' => 'MoufTest\\Model\\Dao\\CarDao',
@@ -1945,6 +1999,13 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getBrandDao() {
 	 	return MoufManager::getMoufManager()->get('brandDao');
+	 }
+
+	/**
+	 * @return MoufTest\Controllers\CarController
+	 */
+	 public static function getCarController() {
+	 	return MoufManager::getMoufManager()->get('carController');
 	 }
 
 	/**

@@ -1,0 +1,53 @@
+{% extends 'views/base.twig' %}
+
+{% block content %}
+    <div ng-controller="addCarController">
+
+        <a class="button icon-left ion-chevron-left button-clear button-dark" href="{{ constant('ROOT_URL') }}cars">Back</a>
+        <div class="list card">
+            <div class="item item-body">
+                <h2>Create a new car</h2>
+
+                <form name="newCarForm" ng-submit="add(newCar, brandCar)" class="item item-input-inset" novalidate="">
+
+                    <div>
+                        <label class="item-input-wrapper" ng-class="{ 'has-error' : newCarForm.name.$invalid }">
+                            <span>Model</span>
+                            <input type="text" name="name" ng-model="newCar.name" placeholder="Model name" required unique-model/>
+                        </label>
+
+                        <div class="control-label" ng-messages="newCarForm.name.$error" ng-if="newCarForm.$submitted">
+                            <div class="error" ng-message="required" >The name is required</div>
+                            <div class="error" ng-message="unique">Model name must be unique</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="item-input-wrapper" ng-class="{ 'has-error' : newCarForm.maxSpeed.$invalid }">
+                            <span>Max. Speed</span>
+                            <input type="number" name="maxSpeed" ng-model="newCar.maxSpeed" placeholder="Max. Speed" required/>
+                            <span>KPH</span>
+                        </label>
+
+                        <div class="control-label" ng-messages="newCarForm.maxSpeed.$error" ng-if="newCarForm.$submitted">
+                            <div class="error" ng-message="required" >The Max. Speed is required</div>
+                            <div class="error" ng-message="number">Please enter a numeric value</div>
+                        </div>
+                    </div>
+
+                    <span>Brand : </span><br/>
+                    <select name="list" ng-model="brandCar" ng-options="brand.name for brand in brands" class="full-size form-control" required>
+                        <option value="">Choose a brand</option>
+                    </select>
+
+                    <div class="control-label" ng-messages="newCarForm.list.$error" ng-if="newCarForm.$submitted">
+                        <div class="error" ng-message="required" >A brand is required</div>
+                    </div>
+
+                    <input type="submit" class="btn btn-default btn-primary" value="Créer"/>
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
